@@ -186,7 +186,77 @@ Now anyone can see your app by accessing this url.
 ![Url](images/1/30.png)
 
 
-### Storage Creation
+## Storage Creation
+
+### Create a project with Supabase
+
+Open the Storage tab and click the Connect Store button.
+![](images/1/31.png)
+
+Click `Supabase`
+
+![](images/1/32.png)
+
+Click `Continue`
+
+![](images/1/33.png)
+
+
+Checked `I accept` and Click `Create New Supabase Account` button.
+
+![](images/1/34.png)
+
+Select `Free Plan` and Click `Continue` button.
+
+![](images/1/35.png)
+
+Name it whatever you like and Click `Create` button.
+
+![](images/1/36.png)
+
+Click `Connect` button.
+
+![](images/1/37.png)
+
+Click `Copy Snipoet` button.
+
+![](images/1/38.png)
+
+Create file [`.env`](../.env)
+
+Select `learning-phase-2` folder and Click `New File` button.
+
+![](images/1/39.png)
+
+Type `.env`
+
+Paste Clipboard.
+
+```ts
+POSTGRES_URL="postgres://xxx"
+POSTGRES_PRISMA_URL="postgres://xxx"
+NEXT_PUBLIC_SUPABASE_URL="https://xxx.supabase.co"
+POSTGRES_URL_NON_POOLING="postgres://xxx/postgres?sslmode=require"
+SUPABASE_JWT_SECRET="xxx"
+POSTGRES_USER="postgres"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="xxx"
+POSTGRES_PASSWORD="xxx"
+POSTGRES_DATABASE="postgres"
+SUPABASE_SERVICE_ROLE_KEY="xxx"
+POSTGRES_HOST="db.xxx.supabase.co"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="xxx"
+```
+
+like this.
+
+
+
+
+
+
+
+
+
 <!-- 参考: https://vercel.com/guides/nextjs-prisma-postgres#step-2-set-up-your-vercel-postgres-database -->
 Back to project dashboard and open `Storage` tab, then click `Connect Store` button.
 ![](images/1/2023-11-17-09-24-06.png)
